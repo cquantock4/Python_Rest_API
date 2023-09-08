@@ -17,8 +17,8 @@ def home():
     
 
 # Calculate the Square root of a number
-# http://127.0.0.1:5000 / squareroute / 10
-@app.route('/squareroute/<int:num>', methods = ['GET'])
+# http://127.0.0.1:5000 / square / 10
+@app.route('/square/<int:num>', methods = ['GET'])
 def disp(num):
   
     return jsonify({'data': num**2})
